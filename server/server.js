@@ -54,6 +54,7 @@ mongoose
 // Graceful shutdown
 process.on('SIGINT', async () => {
   console.log('making setting change - Shutting down gracefully...');
+  console.log('new commet added - Shutting down gracefully...');
   await mongoose.connection.close();
   process.exit(0);
 });
