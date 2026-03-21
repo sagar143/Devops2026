@@ -55,6 +55,8 @@ mongoose
 process.on('SIGINT', async () => {
   console.log('making setting change - Shutting down gracefully...');
   console.log('21032026 commet added - Shutting down gracefully...');
+   console.log(' commet added - Shutting down gracefully...');
+   console.log(' commet added 21032003 - Shutting down gracefully...');
   await mongoose.connection.close();
   process.exit(0);
 });
