@@ -48,6 +48,7 @@ mongoose
   })
   .catch((error) => {
     console.error('Database connection error:', error);
+    console.error('Network connection error:', error);
     process.exit(1);
   });
 
